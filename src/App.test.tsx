@@ -1,4 +1,4 @@
-jest.mock("highcharts-react-official"); // Note: activiate the mock
+jest.mock("highcharts-react-official", () => jest.fn(() => null)); // Note: activiate the mock
 
 import React from "react";
 import { render } from "@testing-library/react";
